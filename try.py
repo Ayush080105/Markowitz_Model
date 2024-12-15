@@ -101,7 +101,7 @@ if st.button("Run Optimization"):
     optimum = optimize_portfolio(weights, log_daily_returns)
     st.write("Optimal Portfolio Weights:", optimum['x'].round(3))
     optimal_stats = statistics(optimum['x'], log_daily_returns)
-    st.write(f"Expected Return in a month: {optimal_stats[0]:.2f}")
+    st.write(f"Expected Return in a year: {optimal_stats[0]:.2f}")
     st.write(f"Expected Volatility: {optimal_stats[1]:.2f}")
     st.write(f"Sharpe Ratio: {optimal_stats[2]:.2f}")
 
